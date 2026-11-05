@@ -66,9 +66,10 @@ def get(url, headers=None):
         return r.read()
 
 
-def github(path):
+def github(path, auth=True):
     headers = {"Accept": "application/vnd.github+json"}
-    if os.environ.get("GITHUB_TOKEN"):
+    # The Actions token can't read gists (403), so gists go unauthenticated.
+    if auth and os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
     return json.loads(get(f"https://api.github.com{path}", headers))
 
@@ -91,7 +92,7 @@ def blog_posts(n=5):
 
 def gists(n=4):
     out = []
-    for g in github(f"/users/{GITHUB_USER}/gists?per_page=30"):
+    for g in github(f"/users/{GITHUB_USER}/gists?per_page=30", auth=False):
         if not g.get("public"):
             continue
         files = list(g.get("files", {}))
