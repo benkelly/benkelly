@@ -23,12 +23,12 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [**scrobSter**](https://github.com/benkelly/scrobster) | Identifies the music playing in every room from mics and cameras, and scrobbles it to Last.fm, ListenBrainz and Maloja. [Post](https://blog.benjamin.ie/blog/scrobster) |
 | [**MercurySandbox**](https://github.com/benkelly/MercurySandbox) | A self-hosted AI coding-agent stack in sandboxed Docker containers. |
 
-<!-- LISTENING:START -->
+<a href="https://github.com/benkelly/now-playing-card">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/listening-dark.svg">
-  <img src="assets/listening-light.svg" alt="Last heard: Hallelujah by Jeff Buckley" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://music.idk.ie/now.svg?theme=dark">
+  <img src="https://music.idk.ie/now.svg?theme=light" alt="What I'm listening to, live from Last.fm via scrobSter" width="100%">
 </picture>
-<!-- LISTENING:END -->
+</a>
 
 ### Latest writing
 
@@ -60,4 +60,4 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 22 Oct 2026 |
 <!-- REPOS:END -->
 
-<sub>The map, the lists and the music card update themselves, from my blog, GitHub and Last.fm (via scrobSter). See [scripts/build_profile.py](scripts/build_profile.py).</sub>
+<sub>The map and lists update themselves every few hours from my blog and GitHub ([scripts/build_profile.py](scripts/build_profile.py)). The music card is live, drawn by [now-playing-card](https://github.com/benkelly/now-playing-card) from Last.fm, fed by scrobSter.</sub>

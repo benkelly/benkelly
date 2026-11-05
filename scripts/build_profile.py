@@ -9,12 +9,11 @@ Updates, in place:
 - README.md sections between <!-- NAME:START --> and <!-- NAME:END -->:
   BLOG-POSTS, GISTS, REPOS
 - assets/map-dark.svg, assets/map-light.svg: a mind map of projects and posts
-- assets/listening-dark.svg, assets/listening-light.svg: last track from Last.fm
 
-Environment (all optional; a section is left alone if its data can't be fetched):
+Environment (optional; a section is left alone if its data can't be fetched):
   GITHUB_TOKEN     raises the GitHub API rate limit
-  LASTFM_API_KEY   turns on the Last.fm card
-  LASTFM_USER      Last.fm username
+
+The music card is live, from https://github.com/benkelly/now-playing-card.
 
 Standard library only.
 """
@@ -25,7 +24,6 @@ import math
 import os
 import re
 import sys
-import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -110,21 +108,6 @@ def repos(n=5):
         out.append({"name": r["name"], "url": r["html_url"], "desc": (r.get("description") or "").strip(),
                     "lang": r.get("language") or "", "date": r["pushed_at"][:10]})
     return out[:n]
-
-
-def lastfm():
-    key, user = os.environ.get("LASTFM_API_KEY"), os.environ.get("LASTFM_USER")
-    if not key or not user:
-        return None
-    q = urllib.parse.urlencode({"method": "user.getrecenttracks", "user": user, "api_key": key,
-                                "format": "json", "limit": 1})
-    tracks = json.loads(get(f"https://ws.audioscrobbler.com/2.0/?{q}"))["recenttracks"]["track"]
-    if not tracks:
-        return None
-    t = tracks[0]
-    now = t.get("@attr", {}).get("nowplaying") == "true"
-    when = None if now else datetime.fromtimestamp(int(t["date"]["uts"]), timezone.utc)
-    return {"track": t["name"], "artist": t["artist"]["#text"], "now": now, "when": when}
 
 
 # ---------- README sections ----------
@@ -233,50 +216,18 @@ def map_svg(theme, posts):
     return "\n".join(parts) + "\n"
 
 
-def listening_svg(theme, t):
-    c = THEMES[theme]
-    W, H = 880, 92
-    if t["now"]:
-        label = "NOW LISTENING"
-    else:
-        label = "LAST HEARD · " + t["when"].strftime("%d %b, %H:%M UTC").upper()
-    bars = "".join(
-        f'<rect x="{30 + i * 8}" y="{58 - h}" width="5" height="{h}" rx="1.5" fill="{c["gold"]}"/>'
-        for i, h in enumerate([14, 26, 18, 32, 22])
-    )
-    return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-        f'role="img" aria-label="{esc(label.title())}: {esc(t["track"])} by {esc(t["artist"])}">\n'
-        f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}"/>\n'
-        f'<g font-family="{FONT}">{bars}\n'
-        f'<text x="90" y="30" font-size="11" letter-spacing="1.5" fill="{c["gold"]}">{esc(label)}</text>\n'
-        f'<text x="90" y="54" font-size="18" font-weight="600" fill="{c["text"]}">{esc(trim(t["track"], 60))}</text>\n'
-        f'<text x="90" y="76" font-size="14" fill="{c["silver"]}">{esc(trim(t["artist"], 70))}</text>\n'
-        f'<text x="{W - 22}" y="{H - 14}" text-anchor="end" font-size="11" fill="{c["muted"]}">'
-        f'heard by scrobSter</text>\n'
-        f'</g></svg>\n'
-    )
-
-
-def picture(name, alt):
-    return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg">\n'
-            f'  <img src="assets/{name}-light.svg" alt="{esc(alt)}" width="100%">\n</picture>')
-
-
 # ---------- main ----------
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--fixtures", help="JSON file with posts, gists, repos and track, instead of fetching")
+    ap.add_argument("--fixtures", help="JSON file with posts, gists and repos, instead of fetching")
     args = ap.parse_args()
 
     if args.fixtures:
         data = json.loads(Path(args.fixtures).read_text())
-        if data.get("track") and data["track"].get("when"):
-            data["track"]["when"] = datetime.fromisoformat(data["track"]["when"])
         sources = {k: (lambda v=v: v) for k, v in data.items()}
     else:
-        sources = {"posts": blog_posts, "gists": gists, "repos": repos, "track": lastfm}
+        sources = {"posts": blog_posts, "gists": gists, "repos": repos, }
 
     def fetch(name):
         try:
@@ -299,11 +250,6 @@ def main():
     r = fetch("repos")
     if r:
         text = replace_section(text, "REPOS", render_repos(r))
-    t = fetch("track")
-    if t:
-        for theme in THEMES:
-            (ASSETS / f"listening-{theme}.svg").write_text(listening_svg(theme, t))
-        text = replace_section(text, "LISTENING", picture("listening", f"Last heard: {t['track']} by {t['artist']}"))
 
     README.write_text(text)
     print("done")
