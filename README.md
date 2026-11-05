@@ -1,3 +1,10 @@
+<a href="https://github.com/benkelly/now-playing-card">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://music.idk.ie/now.svg?theme=dark">
+  <img src="https://music.idk.ie/now.svg?theme=light" alt="What I'm listening to, live from Last.fm via scrobSter" width="520">
+</picture>
+</a>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/map-dark.svg">
   <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="100%">
@@ -23,12 +30,6 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [**scrobSter**](https://github.com/benkelly/scrobster) | Identifies the music playing in every room from mics and cameras, and scrobbles it to Last.fm, ListenBrainz and Maloja. [Post](https://blog.benjamin.ie/blog/scrobster) |
 | [**MercurySandbox**](https://github.com/benkelly/MercurySandbox) | A self-hosted AI coding-agent stack in sandboxed Docker containers. |
 
-<a href="https://github.com/benkelly/now-playing-card">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://music.idk.ie/now.svg?theme=dark">
-  <img src="https://music.idk.ie/now.svg?theme=light" alt="What I'm listening to, live from Last.fm via scrobSter" width="100%">
-</picture>
-</a>
 
 ### Latest writing
 
