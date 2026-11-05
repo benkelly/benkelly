@@ -38,6 +38,10 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 ### Latest gists
 
 <!-- GISTS:START -->
+- [Shelly Smart Bulb Control with Fallback](https://gist.github.com/benkelly/f52bb7b286ced37324c7c2603aa54f29) · 15 Mar 2026
+- [Some notes and tools for reverse engineering / deobfuscating / unminifying obfuscated web app code](https://gist.github.com/benkelly/311116b317e2fea20a5e7295094e2940) · 13 Mar 2025
+- [Tesla Key Card Protocol](https://gist.github.com/benkelly/ef02ffa59ea272a1260d3399cbf24f4b) · 08 Oct 2024
+- [covid_improved.rb](https://gist.github.com/benkelly/65b0a2c1c36594a522b2dbe3ad2edeb0) · 17 Mar 2020
 <!-- GISTS:END -->
 
 ### Recently active
