@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/map-dark.svg">
+  <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="100%">
+</picture>
+
 ## Hi, I'm Ben 👋
 
 Platform engineer in Dublin. I build infrastructure that's secure by default and easy to live with.
@@ -18,6 +23,9 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [**scrobSter**](https://github.com/benkelly/scrobster) | Identifies the music playing in every room from mics and cameras, and scrobbles it to Last.fm, ListenBrainz and Maloja. [Post](https://blog.benjamin.ie/blog/scrobster) |
 | [**MercurySandbox**](https://github.com/benkelly/MercurySandbox) | A self-hosted AI coding-agent stack in sandboxed Docker containers. |
 
+<!-- LISTENING:START -->
+<!-- LISTENING:END -->
+
 ### Latest writing
 
 <!-- BLOG-POSTS:START -->
@@ -27,4 +35,14 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 - [NiFi Authentication with Azure Active Directory](https://blog.benjamin.ie/blog/nifi-azure-ad-authentication) · 08 Nov 2022
 <!-- BLOG-POSTS:END -->
 
-<sub>The list above updates itself every day from [blog.benjamin.ie](https://blog.benjamin.ie).</sub>
+### Latest gists
+
+<!-- GISTS:START -->
+<!-- GISTS:END -->
+
+### Recently active
+
+<!-- REPOS:START -->
+<!-- REPOS:END -->
+
+<sub>The map, the lists and the music card update themselves, from my blog, GitHub and Last.fm (via scrobSter). See [scripts/build_profile.py](scripts/build_profile.py).</sub>
