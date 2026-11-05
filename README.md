@@ -7,7 +7,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/map-dark.svg">
-  <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="100%">
+  <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="520">
 </picture>
 
 ## Hi, I'm Ben 👋

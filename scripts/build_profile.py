@@ -158,59 +158,57 @@ def trim(s, n):
 
 
 def map_svg(theme, posts):
+    # 520 wide with 15px text, so it stays readable when GitHub shrinks it on a
+    # phone. Projects in a column on the left, posts on the right, me between.
     c = THEMES[theme]
-    W, H, cx, cy = 880, 340, 400, 175
-    titles = {p["slug"]: p["title"] for p in posts}
+    W = 520
     left = [p["name"] for p in PROJECTS]
-    right = [trim(p["title"].split(":")[0], 28) for p in posts]
+    right = [trim(p["title"].split(":")[0], 24) for p in posts]
     post_slugs = [p["slug"] for p in posts]
+    rows = max(len(left), len(right))
+    top, step = 72, 46
+    H = top + (rows - 1) * step + 40
+    lx, rx, cx = 168, 300, 234
+    cy = top + (rows - 1) * step / 2
 
-    def arc(count, start, end):
-        if count == 1:
-            return [(start + end) / 2]
-        return [start + (end - start) * i / (count - 1) for i in range(count)]
+    def column(count):
+        # Centre a shorter column against the longer one.
+        offset = (rows - count) * step / 2
+        return [top + offset + i * step for i in range(count)]
 
-    # Projects on a left arc, posts on a right one. Right labels are longer,
-    # so that arc is narrower.
-    ry = 125
-    lpos = [(cx + 250 * math.cos(math.radians(a)), cy + ry * math.sin(math.radians(a)))
-            for a in arc(len(left), 230, 130)]
-    rpos = [(cx + 230 * math.cos(math.radians(a)), cy + ry * math.sin(math.radians(a)))
-            for a in arc(len(right), -50, 50)]
+    lpos = [(lx, y) for y in column(len(left))]
+    rpos = [(rx, y) for y in column(len(right))]
 
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" '
         f'role="img" aria-label="Map of my projects and posts">',
-        f'<rect width="{W}" height="{H}" rx="14" fill="{c["bg"]}"/>',
+        f'<rect width="{W}" height="{H:.0f}" rx="16" fill="{c["bg"]}"/>',
         f'<g font-family="{FONT}">',
     ]
-    # Lines: centre to each node, and project to its post.
     for x, y in lpos + rpos:
-        parts.append(f'<path d="M{cx},{cy} Q{(cx + x) / 2},{cy} {x:.1f},{y:.1f}" fill="none" '
-                     f'stroke="{c["line"]}" stroke-width="1.2"/>')
+        parts.append(f'<path d="M{cx},{cy:.1f} C{(cx + x) / 2:.1f},{cy:.1f} {(cx + x) / 2:.1f},{y:.1f} {x},{y:.1f}" '
+                     f'fill="none" stroke="{c["line"]}" stroke-width="1.4"/>')
+    # Each project to its post: a dashed gold arc around the outside.
     for i, proj in enumerate(PROJECTS):
         if proj["post"] in post_slugs:
             (x1, y1), (x2, y2) = lpos[i], rpos[post_slugs.index(proj["post"])]
-            parts.append(f'<path d="M{x1:.1f},{y1:.1f} C{cx},{y1 - 70:.1f} {cx},{y2 - 70:.1f} {x2:.1f},{y2:.1f}" '
-                         f'fill="none" stroke="{c["gold"]}" stroke-opacity="0.35" stroke-width="1" '
+            parts.append(f'<path d="M{x1},{y1:.1f} C{x1 + 40},{y1 - 22:.1f} {x2 - 40},{y2 - 22:.1f} {x2},{y2:.1f}" '
+                         f'fill="none" stroke="{c["gold"]}" stroke-opacity="0.45" stroke-width="1.2" '
                          f'stroke-dasharray="3 4"/>')
-    # Centre.
     parts += [
-        f'<circle cx="{cx}" cy="{cy}" r="34" fill="{c["gold"]}" fill-opacity="0.12"/>',
-        f'<circle cx="{cx}" cy="{cy}" r="9" fill="{c["gold"]}"/>',
-        f'<text x="{cx}" y="{cy + 30}" text-anchor="middle" font-size="14" font-weight="600" '
-        f'fill="{c["text"]}">Ben Kelly</text>',
+        f'<circle cx="{cx}" cy="{cy:.1f}" r="22" fill="{c["gold"]}" fill-opacity="0.14"/>',
+        f'<circle cx="{cx}" cy="{cy:.1f}" r="8" fill="{c["gold"]}"/>',
     ]
     for (x, y), label in zip(lpos, left):
-        parts += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="{c["gold"]}"/>',
-                  f'<text x="{x - 12:.1f}" y="{y + 4:.1f}" text-anchor="end" font-size="13" '
+        parts += [f'<circle cx="{x}" cy="{y:.1f}" r="6" fill="{c["gold"]}"/>',
+                  f'<text x="{x - 14}" y="{y + 5:.1f}" text-anchor="end" font-size="15" '
                   f'fill="{c["text"]}">{esc(label)}</text>']
     for (x, y), label in zip(rpos, right):
-        parts += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{c["silver"]}"/>',
-                  f'<text x="{x + 12:.1f}" y="{y + 4:.1f}" font-size="13" fill="{c["text"]}">{esc(label)}</text>']
+        parts += [f'<circle cx="{x}" cy="{y:.1f}" r="5" fill="{c["silver"]}"/>',
+                  f'<text x="{x + 14}" y="{y + 5:.1f}" font-size="15" fill="{c["text"]}">{esc(label)}</text>']
     parts += [
-        f'<text x="22" y="30" font-size="12" fill="{c["gold"]}" letter-spacing="1.5">PROJECTS</text>',
-        f'<text x="{W - 22}" y="30" text-anchor="end" font-size="12" fill="{c["silver"]}" letter-spacing="1.5">WRITING</text>',
+        f'<text x="{lx - 14}" y="36" text-anchor="end" font-size="12" fill="{c["gold"]}" letter-spacing="1.5">PROJECTS</text>',
+        f'<text x="{rx + 14}" y="36" font-size="12" fill="{c["silver"]}" letter-spacing="1.5">WRITING</text>',
         "</g></svg>",
     ]
     return "\n".join(parts) + "\n"
