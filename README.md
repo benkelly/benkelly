@@ -5,19 +5,14 @@
 </picture>
 </a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/map-dark.svg">
-  <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="520">
-</picture>
-
-## Hi, I'm Ben 👋
+## Hi, I'm ben
 
 Platform engineer in Dublin. I build infrastructure that's secure by default and easy to live with.
 
 - Six years at **Microsoft Azure**: helped stand up two US sovereign clouds, turned EU data law into architecture for the EU Data Boundary, and ran build and deploy tooling for 100+ Azure Core repos.
 - Most recently **lead platform engineer** at a smart-building startup: AWS, Kubernetes (EKS), Terraform, PKI and just-in-time access.
-- Co-inventor on two US patent applications. Started out as an electrician's apprentice at 16, so I like hardware too.
-- Dyslexic. I write about making tools and documents that work for people like me.
+- Co-inventor on two US patent applications. Started out as an electrician's apprentice at 15, so I like hardware too.
+- I'm also Dyslexic. I like to write about making tools and documents that work for people like me.
 
 [CV](https://cv.benjamin.ie) · [LinkedIn](https://www.linkedin.com/in/b3nkelly/) · [Blog](https://blog.benjamin.ie) · [Consulting](https://consulting.benjamin.ie)
 
@@ -30,6 +25,10 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [**scrobSter**](https://github.com/benkelly/scrobster) | Identifies the music playing in every room from mics and cameras, and scrobbles it to Last.fm, ListenBrainz and Maloja. [Post](https://blog.benjamin.ie/blog/scrobster) |
 | [**MercurySandbox**](https://github.com/benkelly/MercurySandbox) | A self-hosted AI coding-agent stack in sandboxed Docker containers. |
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/map-dark.svg">
+  <img src="assets/map-light.svg" alt="A map of my projects and the posts I've written about them" width="520">
+</picture>
 
 ### Latest writing
 
