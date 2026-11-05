@@ -24,6 +24,10 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 | [**MercurySandbox**](https://github.com/benkelly/MercurySandbox) | A self-hosted AI coding-agent stack in sandboxed Docker containers. |
 
 <!-- LISTENING:START -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/listening-dark.svg">
+  <img src="assets/listening-light.svg" alt="Last heard: Hallelujah by Jeff Buckley" width="100%">
+</picture>
 <!-- LISTENING:END -->
 
 ### Latest writing
