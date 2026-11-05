@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" role="img" aria-label="Map of my projects and posts">
+<rect width="880" height="340" rx="14" fill="#0e0f11"/>
+<g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<path d="M400,175 Q319.6515487891826,175 239.3,79.2" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q286.71152662041874,175 173.4,122.2" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q275.0,175 150.0,175.0" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q286.71152662041874,175 173.4,227.8" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q319.6515487891826,175 239.3,270.8" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q473.92057511395205,175 547.8,79.2" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q510.16879391628123,175 620.3,139.1" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q510.16879391628123,175 620.3,210.9" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M400,175 Q473.92057511395205,175 547.8,270.8" fill="none" stroke="#34373c" stroke-width="1.2"/>
+<path d="M239.3,79.2 C400,9.2 400,9.2 547.8,79.2" fill="none" stroke="#d4a94b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M173.4,122.2 C400,52.2 400,140.9 620.3,210.9" fill="none" stroke="#d4a94b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M150.0,175.0 C400,105.0 400,69.1 620.3,139.1" fill="none" stroke="#d4a94b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M239.3,270.8 C400,200.8 400,200.8 547.8,270.8" fill="none" stroke="#d4a94b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 4"/>
+<circle cx="400" cy="175" r="34" fill="#d4a94b" fill-opacity="0.12"/>
+<circle cx="400" cy="175" r="9" fill="#d4a94b"/>
+<text x="400" y="205" text-anchor="middle" font-size="14" font-weight="600" fill="#e8e6e1">Ben Kelly</text>
+<circle cx="239.3" cy="79.2" r="6" fill="#d4a94b"/>
+<text x="227.3" y="83.2" text-anchor="end" font-size="13" fill="#e8e6e1">mentat</text>
+<circle cx="173.4" cy="122.2" r="6" fill="#d4a94b"/>
+<text x="161.4" y="126.2" text-anchor="end" font-size="13" fill="#e8e6e1">cv-pipeline</text>
+<circle cx="150.0" cy="175.0" r="6" fill="#d4a94b"/>
+<text x="138.0" y="179.0" text-anchor="end" font-size="13" fill="#e8e6e1">scrobSter</text>
+<circle cx="173.4" cy="227.8" r="6" fill="#d4a94b"/>
+<text x="161.4" y="231.8" text-anchor="end" font-size="13" fill="#e8e6e1">MercurySandbox</text>
+<circle cx="239.3" cy="270.8" r="6" fill="#d4a94b"/>
+<text x="227.3" y="274.8" text-anchor="end" font-size="13" fill="#e8e6e1">NiFi + Azure AD</text>
+<circle cx="547.8" cy="79.2" r="5" fill="#b8bec7"/>
+<text x="559.8" y="83.2" font-size="13" fill="#e8e6e1">mentat</text>
+<circle cx="620.3" cy="139.1" r="5" fill="#b8bec7"/>
+<text x="632.3" y="143.1" font-size="13" fill="#e8e6e1">scrobSter</text>
+<circle cx="620.3" cy="210.9" r="5" fill="#b8bec7"/>
+<text x="632.3" y="214.9" font-size="13" fill="#e8e6e1">My CV is a CI pipeline</text>
+<circle cx="547.8" cy="270.8" r="5" fill="#b8bec7"/>
+<text x="559.8" y="274.8" font-size="13" fill="#e8e6e1">NiFi Authentication with Az…</text>
+<text x="22" y="30" font-size="12" fill="#d4a94b" letter-spacing="1.5">PROJECTS</text>
+<text x="858" y="30" text-anchor="end" font-size="12" fill="#b8bec7" letter-spacing="1.5">WRITING</text>
+</g></svg>

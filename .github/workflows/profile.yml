@@ -1,0 +1,40 @@
+name: profile
+
+# Rebuilds the self-updating parts of README.md: the map, latest posts,
+# gists, recently active repos and the Last.fm card.
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # every 3 hours
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/profile.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Rebuild
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_USER: ${{ vars.LASTFM_USER }}
+        run: python3 scripts/build_profile.py
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain README.md assets)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md assets
+            git commit -m "Update profile"
+            git push
+          fi
