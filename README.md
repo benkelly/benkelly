@@ -53,9 +53,9 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 07 Nov 2026 |
 | [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/blog/mentat <sub>TypeScript</sub> | 06 Nov 2026 |
 | [now-playing-card](https://github.com/benkelly/now-playing-card) | Cloud fire worker to generate multiplying now Last.fm card <sub>TypeScript</sub> | 05 Nov 2026 |
-| [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 02 Nov 2026 |
 | [scrobSter](https://github.com/benkelly/scrobSter) | Scrobble the world! <sub>Python</sub> | 02 Nov 2026 |
 | [cv-pipeline](https://github.com/benkelly/cv-pipeline) | LaTeX CV - GitOps like automation, building & publishing tool <sub>Python</sub> | 24 Oct 2026 |
 <!-- REPOS:END -->
