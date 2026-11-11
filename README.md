@@ -53,7 +53,7 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
-| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/blog/mentat <sub>TypeScript</sub> | 11 Nov 2026 |
+| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 11 Nov 2026 |
 | [legocam](https://github.com/benkelly/legocam) | macOS user-space driver for the 1999 LEGO Studios camera (Logitech QuickCam Web). Use it as a webcam. <sub>C</sub> | 10 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 10 Nov 2026 |
 | [Airline-Seat-Planner-Aws-Lambda](https://github.com/benkelly/Airline-Seat-Planner-Aws-Lambda) | Airline Seat Planner on Aws Lambda <sub>Java</sub> | 10 Nov 2026 |
