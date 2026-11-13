@@ -53,11 +53,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 13 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 13 Nov 2026 |
 | [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 13 Nov 2026 |
 | [legocam](https://github.com/benkelly/legocam) | macOS user-space driver for the 1999 LEGO Studios camera (Logitech QuickCam Web). Use it as a webcam. <sub>C</sub> | 10 Nov 2026 |
 | [Airline-Seat-Planner-Aws-Lambda](https://github.com/benkelly/Airline-Seat-Planner-Aws-Lambda) | Airline Seat Planner on Aws Lambda <sub>Java</sub> | 10 Nov 2026 |
-| [now-playing-card](https://github.com/benkelly/now-playing-card) | Cloud fire worker to generate multiplying now Last.fm card <sub>TypeScript</sub> | 05 Nov 2026 |
 <!-- REPOS:END -->
 
 <sub>The map and lists update themselves every few hours from my blog and GitHub ([scripts/build_profile.py](scripts/build_profile.py)). The music card is live, drawn by [now-playing-card](https://github.com/benkelly/now-playing-card) from Last.fm, fed by scrobSter.</sub>
