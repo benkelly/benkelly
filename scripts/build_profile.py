@@ -42,6 +42,8 @@ SKIP_REPOS = {"benkelly"}  # this repo
 PROJECTS = [
     {"name": "mentat", "post": "mentat"},
     {"name": "cv-pipeline", "post": "my-cv-is-a-ci-pipeline"},
+    {"name": "legocam", "post": "legocam"},
+    {"name": "SidePulse", "post": "sidepulse"},
     {"name": "scrobSter", "post": "scrobster"},
     {"name": "MercurySandbox", "post": "mercurysandbox"},
     {"name": "NiFi + Azure AD", "post": "nifi-azure-ad-authentication"},
@@ -78,11 +80,15 @@ def blog_posts(n=5):
         link = (item.findtext("link") or "").strip().rstrip("/")
         title = (item.findtext("title") or "").strip()
         when = item.findtext("pubDate")
-        if not link.startswith("https://blog.benjamin.ie/blog/") or not title or not when:
+        # Posts live at /<slug> (they used to be /blog/<slug>); the feed also
+        # carries gists, which are skipped.
+        m = re.fullmatch(r"https://blog\.benjamin\.ie/(?:blog/)?([\w-]+)", link)
+        if not m or not title or not when:
             continue
-        if link.endswith("/hello-world"):
+        slug = m.group(1)
+        if slug == "hello-world":
             continue
-        posts.append({"title": title, "url": link, "slug": link.rsplit("/", 1)[-1],
+        posts.append({"title": title, "url": link, "slug": slug,
                       "date": parsedate_to_datetime(when).date().isoformat()})
     posts.sort(key=lambda p: p["date"], reverse=True)
     return posts[:n]
