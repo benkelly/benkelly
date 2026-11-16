@@ -38,16 +38,18 @@ GITHUB_USER = "benkelly"
 BLOG_RSS = "https://blog.benjamin.ie/api/rss"
 SKIP_REPOS = {"benkelly"}  # this repo
 
-# Projects on the map, and which blog post belongs to each (by slug).
+# Projects on the map, and which blog posts belong to each (by slug).
+# Posts linked here always appear on the map, however old.
 PROJECTS = [
-    {"name": "mentat", "post": "mentat"},
-    {"name": "cv-pipeline", "post": "my-cv-is-a-ci-pipeline"},
-    {"name": "legocam", "post": "legocam"},
-    {"name": "SidePulse", "post": "sidepulse"},
-    {"name": "scrobSter", "post": "scrobster"},
-    {"name": "MercurySandbox", "post": "mercurysandbox"},
-    {"name": "NiFi + Azure AD", "post": "nifi-azure-ad-authentication"},
+    {"name": "mentat", "posts": ["mentat"]},
+    {"name": "cv-pipeline", "posts": ["my-cv-is-a-ci-pipeline", "dyslexia-doesnt-stop-after-school"]},
+    {"name": "legocam", "posts": ["legocam"]},
+    {"name": "SidePulse", "posts": ["sidepulse"]},
+    {"name": "scrobSter", "posts": ["scrobster"]},
+    {"name": "MercurySandbox", "posts": []},
+    {"name": "NiFi + Azure AD", "posts": ["nifi-azure-ad-authentication"]},
 ]
+MAP_MAX_POSTS = 8  # linked posts first, then the newest others, up to this many
 
 THEMES = {
     "dark": {"bg": "#0e0f11", "panel": "#16181b", "gold": "#d4a94b", "silver": "#b8bec7",
@@ -74,7 +76,7 @@ def github(path, auth=True):
     return json.loads(get(f"https://api.github.com{path}", headers))
 
 
-def blog_posts(n=5):
+def blog_posts():
     posts = []
     for item in ET.fromstring(get(BLOG_RSS)).iter("item"):
         link = (item.findtext("link") or "").strip().rstrip("/")
@@ -91,7 +93,7 @@ def blog_posts(n=5):
         posts.append({"title": title, "url": link, "slug": slug,
                       "date": parsedate_to_datetime(when).date().isoformat()})
     posts.sort(key=lambda p: p["date"], reverse=True)
-    return posts[:n]
+    return posts
 
 
 def gists(n=4):
@@ -168,6 +170,10 @@ def map_svg(theme, posts):
     # phone. Projects in a column on the left, posts on the right, me between.
     c = THEMES[theme]
     W = 520
+    linked = {s for proj in PROJECTS for s in proj["posts"]}
+    keep = [p for p in posts if p["slug"] in linked]
+    keep += [p for p in posts if p["slug"] not in linked][: max(0, MAP_MAX_POSTS - len(keep))]
+    posts = sorted(keep, key=lambda p: p["date"], reverse=True)
     left = [p["name"] for p in PROJECTS]
     right = [trim(p["title"].split(":")[0], 24) for p in posts]
     post_slugs = [p["slug"] for p in posts]
@@ -196,8 +202,10 @@ def map_svg(theme, posts):
                      f'fill="none" stroke="{c["line"]}" stroke-width="1.4"/>')
     # Each project to its post: a dashed gold arc around the outside.
     for i, proj in enumerate(PROJECTS):
-        if proj["post"] in post_slugs:
-            (x1, y1), (x2, y2) = lpos[i], rpos[post_slugs.index(proj["post"])]
+        for slug in proj["posts"]:
+            if slug not in post_slugs:
+                continue
+            (x1, y1), (x2, y2) = lpos[i], rpos[post_slugs.index(slug)]
             parts.append(f'<path d="M{x1},{y1:.1f} C{x1 + 40},{y1 - 22:.1f} {x2 - 40},{y2 - 22:.1f} {x2},{y2:.1f}" '
                          f'fill="none" stroke="{c["gold"]}" stroke-opacity="0.45" stroke-width="1.2" '
                          f'stroke-dasharray="3 4"/>')
@@ -245,7 +253,7 @@ def main():
 
     posts = fetch("posts")
     if posts:
-        text = replace_section(text, "BLOG-POSTS", render_posts(posts))
+        text = replace_section(text, "BLOG-POSTS", render_posts(posts[:5]))
         for theme in THEMES:
             (ASSETS / f"map-{theme}.svg").write_text(map_svg(theme, posts))
     g = fetch("gists")

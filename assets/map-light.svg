@@ -8,15 +8,20 @@
 <path d="M234,210.0 C201.0,210.0 201.0,256.0 168,256.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C201.0,210.0 201.0,302.0 168,302.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C201.0,210.0 201.0,348.0 168,348.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
+<path d="M234,210.0 C267.0,210.0 267.0,72.0 300,72.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C267.0,210.0 267.0,118.0 300,118.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C267.0,210.0 267.0,164.0 300,164.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C267.0,210.0 267.0,210.0 300,210.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C267.0,210.0 267.0,256.0 300,256.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
 <path d="M234,210.0 C267.0,210.0 267.0,302.0 300,302.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
-<path d="M168,72.0 C208,50.0 260,234.0 300,256.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,164.0 C208,142.0 260,142.0 300,164.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,210.0 C208,188.0 260,188.0 300,210.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,256.0 C208,234.0 260,280.0 300,302.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M234,210.0 C267.0,210.0 267.0,348.0 300,348.0" fill="none" stroke="#d6d4ce" stroke-width="1.4"/>
+<path d="M168,72.0 C208,50.0 260,188.0 300,210.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,118.0 C208,96.0 260,280.0 300,302.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,118.0 C208,96.0 260,50.0 300,72.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,164.0 C208,142.0 260,96.0 300,118.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,210.0 C208,188.0 260,142.0 300,164.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,256.0 C208,234.0 260,234.0 300,256.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,348.0 C208,326.0 260,326.0 300,348.0" fill="none" stroke="#9a7425" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
 <circle cx="234" cy="210.0" r="22" fill="#9a7425" fill-opacity="0.14"/>
 <circle cx="234" cy="210.0" r="8" fill="#9a7425"/>
 <circle cx="168" cy="72.0" r="6" fill="#9a7425"/>
@@ -33,16 +38,20 @@
 <text x="154" y="307.0" text-anchor="end" font-size="15" fill="#1c1c1c">MercurySandbox</text>
 <circle cx="168" cy="348.0" r="6" fill="#9a7425"/>
 <text x="154" y="353.0" text-anchor="end" font-size="15" fill="#1c1c1c">NiFi + Azure AD</text>
+<circle cx="300" cy="72.0" r="5" fill="#5f6670"/>
+<text x="314" y="77.0" font-size="15" fill="#1c1c1c">Dyslexia doesn&#x27;t stop a…</text>
 <circle cx="300" cy="118.0" r="5" fill="#5f6670"/>
-<text x="314" y="123.0" font-size="15" fill="#1c1c1c">Dyslexia doesn&#x27;t stop a…</text>
+<text x="314" y="123.0" font-size="15" fill="#1c1c1c">legocam</text>
 <circle cx="300" cy="164.0" r="5" fill="#5f6670"/>
-<text x="314" y="169.0" font-size="15" fill="#1c1c1c">legocam</text>
+<text x="314" y="169.0" font-size="15" fill="#1c1c1c">SidePulse</text>
 <circle cx="300" cy="210.0" r="5" fill="#5f6670"/>
-<text x="314" y="215.0" font-size="15" fill="#1c1c1c">SidePulse</text>
+<text x="314" y="215.0" font-size="15" fill="#1c1c1c">mentat</text>
 <circle cx="300" cy="256.0" r="5" fill="#5f6670"/>
-<text x="314" y="261.0" font-size="15" fill="#1c1c1c">mentat</text>
+<text x="314" y="261.0" font-size="15" fill="#1c1c1c">scrobSter</text>
 <circle cx="300" cy="302.0" r="5" fill="#5f6670"/>
-<text x="314" y="307.0" font-size="15" fill="#1c1c1c">scrobSter</text>
+<text x="314" y="307.0" font-size="15" fill="#1c1c1c">My CV is a CI pipeline</text>
+<circle cx="300" cy="348.0" r="5" fill="#5f6670"/>
+<text x="314" y="353.0" font-size="15" fill="#1c1c1c">NiFi Authentication wit…</text>
 <text x="154" y="36" text-anchor="end" font-size="12" fill="#9a7425" letter-spacing="1.5">PROJECTS</text>
 <text x="314" y="36" font-size="12" fill="#5f6670" letter-spacing="1.5">WRITING</text>
 </g></svg>
