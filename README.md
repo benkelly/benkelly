@@ -33,10 +33,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 ### Latest writing
 
 <!-- BLOG-POSTS:START -->
-- [mentat: one memory for all my AI tools](https://blog.benjamin.ie/blog/mentat) · 04 Nov 2026
-- [scrobSter: scrobbling the music in every room](https://blog.benjamin.ie/blog/scrobster) · 01 Nov 2026
-- [My CV is a CI pipeline](https://blog.benjamin.ie/blog/my-cv-is-a-ci-pipeline) · 30 Sep 2024
-- [NiFi Authentication with Azure Active Directory](https://blog.benjamin.ie/blog/nifi-azure-ad-authentication) · 08 Nov 2022
+- [Dyslexia doesn't stop after school](https://blog.benjamin.ie/dyslexia-doesnt-stop-after-school) · 13 Nov 2026
+- [legocam: my LEGO webcam from 2000, working on a modern Mac](https://blog.benjamin.ie/legocam) · 10 Nov 2026
+- [SidePulse: a light that tells me when my AI agent needs me](https://blog.benjamin.ie/sidepulse) · 07 Nov 2026
+- [mentat: one memory for all my AI tools](https://blog.benjamin.ie/mentat) · 04 Nov 2026
+- [scrobSter: scrobbling the music in every room](https://blog.benjamin.ie/scrobster) · 01 Nov 2026
 <!-- BLOG-POSTS:END -->
 
 ### Latest gists
