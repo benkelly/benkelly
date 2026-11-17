@@ -54,10 +54,10 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 17 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 17 Nov 2026 |
 | [scrobSter](https://github.com/benkelly/scrobSter) | Scrobble the world! <sub>Python</sub> | 14 Nov 2026 |
 | [sidepulse-mqtt](https://github.com/benkelly/sidepulse-mqtt) | Show SidePulse agent status and LEDs in Home Assistant over MQTT, and control the LEDs. <sub>Python</sub> | 13 Nov 2026 |
-| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 13 Nov 2026 |
 | [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 13 Nov 2026 |
 <!-- REPOS:END -->
 
