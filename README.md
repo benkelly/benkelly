@@ -54,11 +54,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 25 Nov 2026 |
 | [udm-cloudflared](https://github.com/benkelly/udm-cloudflared) | — <sub>Shell</sub> | 24 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 24 Nov 2026 |
 | [evervault-rs](https://github.com/benkelly/evervault-rs) | — <sub>Rust</sub> | 19 Nov 2026 |
 | [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 19 Nov 2026 |
-| [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 18 Nov 2026 |
 <!-- REPOS:END -->
 
 <sub>The map and lists update themselves every few hours from my blog and GitHub ([scripts/build_profile.py](scripts/build_profile.py)). The music card is live, drawn by [now-playing-card](https://github.com/benkelly/now-playing-card) from Last.fm, fed by scrobSter.</sub>
