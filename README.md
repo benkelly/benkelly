@@ -54,8 +54,8 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 26 Nov 2026 |
 | [evervault-rs](https://github.com/benkelly/evervault-rs) | — <sub>Rust</sub> | 25 Nov 2026 |
-| [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 25 Nov 2026 |
 | [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 25 Nov 2026 |
 | [udm-cloudflared](https://github.com/benkelly/udm-cloudflared) | — <sub>Shell</sub> | 24 Nov 2026 |
 | [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 19 Nov 2026 |
