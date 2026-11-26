@@ -1,57 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="388" viewBox="0 0 520 388" role="img" aria-label="Map of my projects and posts">
-<rect width="520" height="388" rx="16" fill="#0e0f11"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="434" viewBox="0 0 520 434" role="img" aria-label="Map of my projects and posts">
+<rect width="520" height="434" rx="16" fill="#0e0f11"/>
 <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
-<path d="M234,210.0 C201.0,210.0 201.0,72.0 168,72.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,118.0 168,118.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,164.0 168,164.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,210.0 168,210.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,256.0 168,256.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,302.0 168,302.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C201.0,210.0 201.0,348.0 168,348.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,72.0 300,72.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,118.0 300,118.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,164.0 300,164.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,210.0 300,210.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,256.0 300,256.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,302.0 300,302.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M234,210.0 C267.0,210.0 267.0,348.0 300,348.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
-<path d="M168,72.0 C208,50.0 260,188.0 300,210.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,118.0 C208,96.0 260,280.0 300,302.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,118.0 C208,96.0 260,50.0 300,72.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,164.0 C208,142.0 260,96.0 300,118.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,210.0 C208,188.0 260,142.0 300,164.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,256.0 C208,234.0 260,234.0 300,256.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<path d="M168,348.0 C208,326.0 260,326.0 300,348.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
-<circle cx="234" cy="210.0" r="22" fill="#d4a94b" fill-opacity="0.14"/>
-<circle cx="234" cy="210.0" r="8" fill="#d4a94b"/>
-<circle cx="168" cy="72.0" r="6" fill="#d4a94b"/>
-<text x="154" y="77.0" text-anchor="end" font-size="15" fill="#e8e6e1">mentat</text>
-<circle cx="168" cy="118.0" r="6" fill="#d4a94b"/>
-<text x="154" y="123.0" text-anchor="end" font-size="15" fill="#e8e6e1">cv-pipeline</text>
-<circle cx="168" cy="164.0" r="6" fill="#d4a94b"/>
-<text x="154" y="169.0" text-anchor="end" font-size="15" fill="#e8e6e1">legocam</text>
-<circle cx="168" cy="210.0" r="6" fill="#d4a94b"/>
-<text x="154" y="215.0" text-anchor="end" font-size="15" fill="#e8e6e1">SidePulse</text>
-<circle cx="168" cy="256.0" r="6" fill="#d4a94b"/>
-<text x="154" y="261.0" text-anchor="end" font-size="15" fill="#e8e6e1">scrobSter</text>
-<circle cx="168" cy="302.0" r="6" fill="#d4a94b"/>
-<text x="154" y="307.0" text-anchor="end" font-size="15" fill="#e8e6e1">MercurySandbox</text>
-<circle cx="168" cy="348.0" r="6" fill="#d4a94b"/>
-<text x="154" y="353.0" text-anchor="end" font-size="15" fill="#e8e6e1">NiFi + Azure AD</text>
+<path d="M234,233.0 C201.0,233.0 201.0,95.0 168,95.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,141.0 168,141.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,187.0 168,187.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,233.0 168,233.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,279.0 168,279.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,325.0 168,325.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C201.0,233.0 201.0,371.0 168,371.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,72.0 300,72.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,118.0 300,118.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,164.0 300,164.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,210.0 300,210.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,256.0 300,256.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,302.0 300,302.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,348.0 300,348.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M234,233.0 C267.0,233.0 267.0,394.0 300,394.0" fill="none" stroke="#34373c" stroke-width="1.4"/>
+<path d="M168,95.0 C208,73.0 260,234.0 300,256.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,141.0 C208,119.0 260,326.0 300,348.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,141.0 C208,119.0 260,96.0 300,118.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,187.0 C208,165.0 260,142.0 300,164.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,233.0 C208,211.0 260,188.0 300,210.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,279.0 C208,257.0 260,280.0 300,302.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<path d="M168,371.0 C208,349.0 260,372.0 300,394.0" fill="none" stroke="#d4a94b" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 4"/>
+<circle cx="234" cy="233.0" r="22" fill="#d4a94b" fill-opacity="0.14"/>
+<circle cx="234" cy="233.0" r="8" fill="#d4a94b"/>
+<circle cx="168" cy="95.0" r="6" fill="#d4a94b"/>
+<text x="154" y="100.0" text-anchor="end" font-size="15" fill="#e8e6e1">mentat</text>
+<circle cx="168" cy="141.0" r="6" fill="#d4a94b"/>
+<text x="154" y="146.0" text-anchor="end" font-size="15" fill="#e8e6e1">cv-pipeline</text>
+<circle cx="168" cy="187.0" r="6" fill="#d4a94b"/>
+<text x="154" y="192.0" text-anchor="end" font-size="15" fill="#e8e6e1">legocam</text>
+<circle cx="168" cy="233.0" r="6" fill="#d4a94b"/>
+<text x="154" y="238.0" text-anchor="end" font-size="15" fill="#e8e6e1">SidePulse</text>
+<circle cx="168" cy="279.0" r="6" fill="#d4a94b"/>
+<text x="154" y="284.0" text-anchor="end" font-size="15" fill="#e8e6e1">scrobSter</text>
+<circle cx="168" cy="325.0" r="6" fill="#d4a94b"/>
+<text x="154" y="330.0" text-anchor="end" font-size="15" fill="#e8e6e1">MercurySandbox</text>
+<circle cx="168" cy="371.0" r="6" fill="#d4a94b"/>
+<text x="154" y="376.0" text-anchor="end" font-size="15" fill="#e8e6e1">NiFi + Azure AD</text>
 <circle cx="300" cy="72.0" r="5" fill="#b8bec7"/>
-<text x="314" y="77.0" font-size="15" fill="#e8e6e1">Dyslexia doesn&#x27;t stop a…</text>
+<text x="314" y="77.0" font-size="15" fill="#e8e6e1">Privacy at the storage…</text>
 <circle cx="300" cy="118.0" r="5" fill="#b8bec7"/>
-<text x="314" y="123.0" font-size="15" fill="#e8e6e1">legocam</text>
+<text x="314" y="123.0" font-size="15" fill="#e8e6e1">Dyslexia doesn&#x27;t stop a…</text>
 <circle cx="300" cy="164.0" r="5" fill="#b8bec7"/>
-<text x="314" y="169.0" font-size="15" fill="#e8e6e1">SidePulse</text>
+<text x="314" y="169.0" font-size="15" fill="#e8e6e1">legocam</text>
 <circle cx="300" cy="210.0" r="5" fill="#b8bec7"/>
-<text x="314" y="215.0" font-size="15" fill="#e8e6e1">mentat</text>
+<text x="314" y="215.0" font-size="15" fill="#e8e6e1">SidePulse</text>
 <circle cx="300" cy="256.0" r="5" fill="#b8bec7"/>
-<text x="314" y="261.0" font-size="15" fill="#e8e6e1">scrobSter</text>
+<text x="314" y="261.0" font-size="15" fill="#e8e6e1">mentat</text>
 <circle cx="300" cy="302.0" r="5" fill="#b8bec7"/>
-<text x="314" y="307.0" font-size="15" fill="#e8e6e1">My CV is a CI pipeline</text>
+<text x="314" y="307.0" font-size="15" fill="#e8e6e1">scrobSter</text>
 <circle cx="300" cy="348.0" r="5" fill="#b8bec7"/>
-<text x="314" y="353.0" font-size="15" fill="#e8e6e1">NiFi Authentication wit…</text>
+<text x="314" y="353.0" font-size="15" fill="#e8e6e1">My CV is a CI pipeline</text>
+<circle cx="300" cy="394.0" r="5" fill="#b8bec7"/>
+<text x="314" y="399.0" font-size="15" fill="#e8e6e1">NiFi Authentication wit…</text>
 <text x="154" y="36" text-anchor="end" font-size="12" fill="#d4a94b" letter-spacing="1.5">PROJECTS</text>
 <text x="314" y="36" font-size="12" fill="#b8bec7" letter-spacing="1.5">WRITING</text>
 </g></svg>

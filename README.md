@@ -33,11 +33,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 ### Latest writing
 
 <!-- BLOG-POSTS:START -->
+- [Privacy at the storage layer: what Accumulo taught me about data lakes](https://blog.benjamin.ie/accumulo-privacy-at-the-storage-layer) · 26 Nov 2026
 - [Dyslexia doesn't stop after school](https://blog.benjamin.ie/dyslexia-doesnt-stop-after-school) · 13 Nov 2026
 - [legocam: my LEGO webcam from 2000, working on a modern Mac](https://blog.benjamin.ie/legocam) · 10 Nov 2026
 - [SidePulse: a light that tells me when my AI agent needs me](https://blog.benjamin.ie/sidepulse) · 07 Nov 2026
 - [mentat: one memory for all my AI tools](https://blog.benjamin.ie/mentat) · 04 Nov 2026
-- [scrobSter: scrobbling the music in every room](https://blog.benjamin.ie/scrobster) · 01 Nov 2026
 <!-- BLOG-POSTS:END -->
 
 ### Latest gists
@@ -54,11 +54,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [accumulo-privacy-demo](https://github.com/benkelly/accumulo-privacy-demo) | — <sub>Go</sub> | 26 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 26 Nov 2026 |
 | [evervault-rs](https://github.com/benkelly/evervault-rs) | — <sub>Rust</sub> | 25 Nov 2026 |
 | [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 25 Nov 2026 |
 | [udm-cloudflared](https://github.com/benkelly/udm-cloudflared) | — <sub>Shell</sub> | 24 Nov 2026 |
-| [opencode-sidepulse](https://github.com/benkelly/opencode-sidepulse) | Show opencode agent status on a SidePulse Pro or Dot LED device. <sub>JavaScript</sub> | 19 Nov 2026 |
 <!-- REPOS:END -->
 
 <sub>The map and lists update themselves every few hours from my blog and GitHub ([scripts/build_profile.py](scripts/build_profile.py)). The music card is live, drawn by [now-playing-card](https://github.com/benkelly/now-playing-card) from Last.fm, fed by scrobSter.</sub>
