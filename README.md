@@ -54,11 +54,11 @@ Platform engineer in Dublin. I build infrastructure that's secure by default and
 <!-- REPOS:START -->
 | Repo | What | Pushed |
 | --- | --- | --- |
+| [scrobSter](https://github.com/benkelly/scrobSter) | Scrobble the world! <sub>Python</sub> | 27 Nov 2026 |
 | [ha-addons](https://github.com/benkelly/ha-addons) | Home Assistant add-ons <sub>Shell</sub> | 27 Nov 2026 |
 | [accumulo-privacy-demo](https://github.com/benkelly/accumulo-privacy-demo) | — <sub>Go</sub> | 26 Nov 2026 |
 | [evervault-rs](https://github.com/benkelly/evervault-rs) | — <sub>Rust</sub> | 25 Nov 2026 |
 | [mentat-template](https://github.com/benkelly/mentat-template) | Read more about mentat: https://blog.benjamin.ie/mentat <sub>TypeScript</sub> | 25 Nov 2026 |
-| [udm-cloudflared](https://github.com/benkelly/udm-cloudflared) | cloudflared on a UniFi gateway <sub>Shell</sub> | 24 Nov 2026 |
 <!-- REPOS:END -->
 
 <sub>The map and lists update themselves every few hours from my blog and GitHub ([scripts/build_profile.py](scripts/build_profile.py)). The music card is live, drawn by [now-playing-card](https://github.com/benkelly/now-playing-card) from Last.fm, fed by scrobSter.</sub>
